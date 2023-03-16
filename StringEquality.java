@@ -12,5 +12,10 @@ public class StringEquality {
         System.out.println(s1==s2);               //true
         System.out.println(s3==s4);               //false
         System.out.println(s1==s3);               //false
+        System.out.println(s1.compareTo(s2));     //0
+        System.out.println(s3.compareTo(s4));     //0
+        System.out.println(s1.compareTo(s3));     //0
+        System.out.println(s1.compareTo("si"));   //-1
+        System.out.println(s1.compareTo(""));     //1
     }
 }
