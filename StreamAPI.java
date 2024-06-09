@@ -18,7 +18,7 @@ public class StreamAPI {
         //Average
         double average1 = Arrays.stream(arr).average().getAsDouble();       //12.76923076923077
         OptionalDouble average2 = Arrays.stream(arr).average();             //OptionalDouble[12.76923076923077]
-//        double average3 = Arrays.stream(arr1).average().getAsDouble();    //error
+//        double average3 = Arrays.stream(arr1).average().getAsDouble();    //NoSuchElementException
         OptionalDouble average4 = Arrays.stream(arr1).average();            //OptionalDouble.empty
 
         //FindAny
