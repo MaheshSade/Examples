@@ -21,7 +21,7 @@ public class MathClass {
 
         //round-off to closest
         int round1 = (int) Math.round(-4.2);                           // -4
-        int round2 = (int) Math.round(-4.6);                           // -5
+        int round2 = (int) Math.round(-4.5);                           // -4
         double round3 = Math.round(4.4);                               // 4.0
         double round4 = Math.round(4.5);                               // 5.0
         double round5 = Math.round(4.6);                               // 5.0
