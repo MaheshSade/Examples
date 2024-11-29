@@ -14,8 +14,10 @@ public class StringConcatenation {
         String s8 = i + s1 + j;                         //4Mahesh5
         String s9 = i + s1 + j+ i;                      //4Mahesh54
         String s10 = j+ i + s1 + j+ i;                  //9Mahesh54
-//        String s11 = s1.concat(null);               //NPE
-        String s12 = s1.concat("");                 //Mahesh
-
+//        String s11 = s1.concat(null);                 //NPE
+        String s12 = s1.concat("");                     //Mahesh
+//        String s13 = s1.concat(i);                    //error
+//        String s14 = j.concat(s2);                    //error
+     
     }
 }
