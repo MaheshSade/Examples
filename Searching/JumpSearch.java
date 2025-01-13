@@ -2,11 +2,12 @@ public class JumpSearch {
 
     public int jumpSearch(int[] arr, int n) {
 
-        int jump = (int) Math.sqrt(arr.length);
+        int size = arr.length;
+        int jump = (int) Math.sqrt(size);
         for (int i = 0; i < arr.length; i = i + jump) {
-            if (arr[i] >= n) {
-                return linearSearch(arr, n, i - jump, i);
-            }
+            if (arr.length < i + jump && arr[i] >= n) {
+                return linearSearch(arr, n, i, i + jump);
+            } else return linearSearch(arr, n, i, size - 1);
         }
         return -1;
     }
