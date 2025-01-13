@@ -12,7 +12,7 @@ public class InterpolationSearch {
                 return mid;
             }
 
-            if (arr[mid] >= n) {
+            if (arr[mid] > n) {
                 end = mid - 1;
             } else {
                 start = mid + 1;
